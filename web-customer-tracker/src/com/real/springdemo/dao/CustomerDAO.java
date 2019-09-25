@@ -6,5 +6,5 @@ import com.real.springdemo.entity.Customer;
 
 public interface CustomerDAO {
 
-	public List<Customer> getCustomer();
+	public List<Customer> getCustomers();
 }
