@@ -3,44 +3,55 @@
 <!DOCTYPE html>
 
 <html>
-	<title>List Customers</title>
+
 <head>
+	<title>List Customers</title>
+	
+	<!-- reference our style sheet -->
 
+	<link type="text/css"
+		  rel="stylesheet"
+		  href="${pageContext.request.contextPath}/resources/css/style.css" />
 </head>
-
 <body>
 
 	<div id="wrapper">
 		<div id="header">
-			<h2>CRM - Customer relationship management</h2>
+			<h2>CRM - Customer Relationship Manager</h2>
 		</div>
 	</div>
 	
 	<div id="container">
+	
 		<div id="content">
+		
+			<!--  add our html table here -->
+		
 			<table>
-			<tr>
-				<th>First Name</th>
-				<th>Last Name</th>
-				<th>email</th>				
-			</tr>
-			
-			<c:forEach var="tempCustomer" items="${customers }">
 				<tr>
-					<th>${tempCustomer.firstName}</th>
-					<th>${tempCustomer.lastName}</th>
-					<th>${tempCustomer.email}</th>				
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Email</th>
 				</tr>
-			</c:forEach>
-			
+				
+				<!-- loop over and print our customers -->
+				<c:forEach var="tempCustomer" items="${customers}">
+				
+					<tr>
+						<td> ${tempCustomer.firstName} </td>
+						<td> ${tempCustomer.lastName} </td>
+						<td> ${tempCustomer.email} </td>
+					</tr>
+				
+				</c:forEach>
+						
 			</table>
+				
 		</div>
+	
 	</div>
+	
 
 </body>
 
-
 </html>
-
-
-
