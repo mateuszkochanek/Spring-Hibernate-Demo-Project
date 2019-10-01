@@ -25,6 +25,13 @@
 	
 		<div id="content">
 		
+			<!-- put a button: add customer -->
+			<input type="button" value="Add Customer"
+				onclick="window.location.href='showFormForAdd'; return false;"
+				class="add-button"
+			/>
+		
+		
 			<!--  add our html table here -->
 		
 			<table>
