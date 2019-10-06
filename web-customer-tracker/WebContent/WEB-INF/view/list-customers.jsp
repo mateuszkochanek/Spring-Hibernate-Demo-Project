@@ -45,7 +45,7 @@
 				<!-- loop over and print our customers -->
 				<c:forEach var="tempCustomer" items="${customers}">
 				
-					<c:url var="updateLink" value="/customer/showFormforUpdate">
+					<c:url var="updateLink" value="/customer/showFormForUpdate">
 						<c:param name="customerId" value="${tempCustomer.id}"></c:param>
 					</c:url>
 					<tr>
