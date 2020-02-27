@@ -5,4 +5,4 @@
 
 During this project I used knowledge about MVC, Spring and Hibernate. It was a great revision after lessons from the course that introduced Spring, Hibernate and MVC.
 
-What I learned is presented in my [Sprin Udemy Repo](https://github.com/mateuszkochanek/Spring-Udemy-Projects)
+What I learned is presented in my [Spring Udemy Repo](https://github.com/mateuszkochanek/Spring-Udemy-Projects)
